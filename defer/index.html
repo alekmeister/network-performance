@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Defer</title>
+    <style>
+        body {
+          margin: 0;
+        }
+        header {
+          height: 80px;
+          flex-shrink: 0;
+          background: #5c636a;
+        }
+        footer {
+          height: 80px;
+          flex-shrink: 0;
+          background: #6c757d;
+        }
+        main {
+          min-height: calc(100% - 160px);
+          display: flex;
+          align-items: stretch;
+        }
+        aside {
+          width: 300px;
+          flex-shrink: 0;
+          background: #343a40;
+        }
+        section {
+          max-width: 100%;
+          flex-grow: 1;
+          background: #51585e;
+        }
+    </style>
+    <script defer src="bundle.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <aside></aside>
+        <section></section>
+    </main>
+    <footer></footer>
+</body>
+</html>
